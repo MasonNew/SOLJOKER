@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Joker Of Solana</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="content">
+            <h1>$JOKER</h1>
+            
+            <div class="buttons">
+                <a href="#" class="btn get-tickets">Get The Coin</a>
+                <a href="https://x.com/TheJoker_of_Sol/status/1868661502892482727" target="_blank" class="btn watch-trailer">
+                    <span class="play-icon">▶</span>
+                    Watch Me
+                </a>
+                <button class="btn play-sound">
+                    <span class="play-icon">♪</span>
+                    Play Me
+                </button>
+            </div>
+
+            <div class="rating">
+                <p class="quote">"THE COIN OF THE YEAR"</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://x.com/TheJoker_of_Sol" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <audio id="jokerAudio" src="joker12.mp4"></audio>
+    <script>
+        document.querySelector('.play-sound').addEventListener('click', function() {
+            const audio = document.getElementById('jokerAudio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    </script>
+</body>
+</html> 
